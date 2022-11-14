@@ -44,7 +44,7 @@ a:hover::after {
 main {
   background-color: #4f4f4f;
   padding-bottom: 25px;
-  background-image: url(/images/bg.png);
+  background-image: url(images/bg.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -184,6 +184,9 @@ main {
   margin: 0;
   padding: 0;
 }
+.img-link {
+  position: relative;
+}
 .return {
   position: fixed;
   right: 100px;
@@ -221,6 +224,26 @@ iframe {
 .active-item {
   opacity: 1;
   transform: translateX(0) scale(1);
+}
+.download-btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: goldenrod;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  color: white !important;
+  cursor: pointer;
+  font-size: 20px;
+  transition: opacity 0.5s;
+}
+.download-btn:hover {
+  opacity: 0.8;
+}
+.download-btn:hover::after {
+  display: none;
 }
 
 @media (max-width: 960px) {
