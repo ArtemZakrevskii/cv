@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <title>Artem Zakrevskii - CV</title>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <header class="page-header" id="head">
+      <h1 class="visualy-hidden">Artem Zakrevskii - CV</h1>
+      <div class="container">
+        <nav class="header-navigation">
+          <input type="checkbox" id="menu-on" />
+          <label class="burger" for="menu-on"></label>
+          <ul class="contacts-list">
+            <li class="contacts-list-item">Telegram: <a href="https://t.me/s1lence75">s1lence75</a></li>
+            <li class="contacts-list-item">Email: <a href="mailto:bezbvap@gmail.com">bezbvap@gmail.com</a></li>
+          </ul>
+          <ul class="header-navigation-list">
+            <li class="header-navigation-item"><a href="#about">about</a></li>
+            <li class="header-navigation-item"><a href="#skills">skills</a></li>
+            <li class="header-navigation-item"><a href="#education">education</a></li>
+            <li class="header-navigation-item"><a href="#works">works</a></li>
+            <li class="header-navigation-item"><label class="menu-off" for="menu-on"></label></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="main-info" id="about">
+        <div class="container grid-wrapper">
+          <div class="main-text">
+            <h2 class="main-title">Artem Zakrevskii</h2>
+          <ul>
+            <li class="main-text-item">I'm 28 years old. Have C&I Engineer degree.</li>
+            <li class="main-text-item">Good at JavaScript/TypeScript, HTML, CSS, ReactJs, Git. Worked with Webpack, SASS, NodeJs, Ant Design, Jest, Redux, AWS.</li>
+            <li class="main-text-item">Calm person, have good communication skills, can work easily in a team. I appreciate honesty and kindness in people.</li>
+            <li class="main-text-item">Interested in science-tech, astronomy, game-dev and extreme spots.</li>
+            <li class="main-text-item">Ready to learn new things and improve my skills.</li>
+          </ul>
+          </div>
+          <img class="cv-avatar" src="images/user.jpg" width="300" alt="Avatar" />
+        </div>
+      </section>
+      <section class="skills" id="skills">
+        <div class="container grid-wrapper">
+          <h3 class="title">My Tech Stack</h3>
+          <ul class="skills-list">
+            <li class="skills-item">HTML5</li>
+            <li class="skills-item">CSS3</li>
+            <li class="skills-item">JavaScript</li>
+            <li class="skills-item">TypeScript</li>
+            <li class="skills-item">Git</li>
+            <li class="skills-item">React</li>
+            <li class="skills-item">Redux</li>
+            <li class="skills-item">Jest</li>
+          </ul>
+          <h3 class="title">Language skills</h3>
+          <ul class="skills-list">
+            <li class="skills-item">Russian: Native</li>
+            <li class="skills-item">English: Intermediate (B1)</li>
+          </ul>
+        </div>
+      </section>
+      <section class="education" id="education">
+        <div class="container">
+          <h3 class="title">Education</h3>
+          <ul class="education-list">
+            <li class="education-item"><a href="https://www.klgtu.ru/en/">Kaliningrad State Technical University:</a> 2010-2015. Master degree of Automation of technological processes and production</li>
+            <li class="education-item"><a href="https://cs50.harvard.edu/">CS50:</a> Introduction to Computer Science course</li>
+            <li class="education-item"><a href="https://htmlacademy.ru/">HTML Academy:</a> html, css and javascript training</li>
+            <li class="education-item"><a href="https://rs.school/">RSschool:</a> html, css, javascript and typescript training</li>
+          </ul>
+        </div>
+      </section>
+      <section class="works" id="works">
+        <div class="container">
+          <h3 class="title">Works</h3>
+          <ul class="works-list">
+            <li class="works-item">
+              <figure class="figure-field">
+                <figcaption class="work-item-title">
+                  <p>Environment Discovery Project (EDP)</p>
+                  <p>I was part of EDP as frontend developer. EDP is a project, focused on developing an app that can provide an easy comparison between settings of two servers in order to solve server configuration-related problems. <br />Used technologies: ReactJS, Redux, Redux-saga, Ant Design, SCSS, Jest, Enzyme, ESLint</p> 
+                </figcaption>
+                <a href="images/EDP.jpg" class="img-link" target="_blank"><img src="images/EDP.jpg" width="100%" alt="EDP prev" /></a>
+              </figure>
+            </li>
+            <li class="works-item">
+              <figure class="figure-field">
+                <figcaption class="work-item-title">
+                  <a href="https://vadosdavos.github.io/my-works/museum-dom/" target="_blank">Museum</a>
+                  <p>
+                    This is a landing page of Louvre museum. <br />Used technologies: HTML, CSS, JavaScript
+                  </p>
+                </figcaption>
+                <a href="https://vadosdavos.github.io/my-works/museum-dom/" class="img-link" target="_blank"><img src="images/museum.jpg" width="100%" alt="Museum prev" /></a>
+              </figure>
+            </li>
+            <li class="works-item">
+              <figure class="figure-field">
+                <figcaption class="work-item-title">
+                  <a href="https://vadosdavos.github.io/photo-filter/" target="_blank">Photo filter</a>
+                  <p>
+                    The application is a photo editor that allows you to edit an image by applying various properties and filters to them. <br />Used technologies: HTML, CSS, JavaScript
+                  </p>
+                </figcaption>
+                <a href="https://vadosdavos.github.io/photo-filter/" class="img-link" target="_blank"><img src="images/filter.jpg" width="600" alt="Photo filter prev" /></a>
+              </figure>
+            </li>
+            <li class="works-item">
+              <figure class="figure-field">
+                <figcaption class="work-item-title">
+                  <a href="https://vadosdavos.github.io/virtual-piano/" target="_blank">Virtual piano</a>
+                  <p>
+                    The application is a virtual piano. The page displays the piano keys. The minimum number of keys is 12 - 7 white and 5 black (one octave), near the piano keys are displayed either the names of the notes corresponding to these keys, or the letters of the keyboard keys, when clicked on which they sound. What is displayed at the moment depends on the state of the Notes / Letters
+                    switch. <br />Used technologies: HTML, CSS, JavaScript
+                  </p>
+                </figcaption>
+                <a href="https://vadosdavos.github.io/virtual-piano/" class="img-link" target="_blank"><img src="images/virtual-piano.jpg" width="600" alt="Virtual piano prev" /></a>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="container">
+        <span class="return" id="return"></span>
+        <ul class="copyright">
+          <li class="copyright-item">@ 2022, Made by: <a href="https://www.linkedin.com/in/vadim-bezymiannyi/">Vadim Bezymiannyi</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
