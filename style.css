@@ -114,12 +114,22 @@ main {
   background-size: cover;
   background-position: center;
   cursor: pointer;
+  transition: 0.4s;
+  border-radius: 5px;
+  opacity: 0.5;
+}
+.eng-btn:not(.lang-active):hover, .pl-btn:not(.lang-active):hover {
+  opacity: 1;
+  transform: scale(1.1);
 }
 .eng-btn {
-  background-image: url(/images/eng.svg);
+  background-image: url(images/eng.svg);
 }
 .pl-btn {
-  background-image: url(/images/pln.svg);
+  background-image: url(images/pln.svg);
+}
+.lang-active {
+  opacity: 1;
 }
 .grid-wrapper {
   border-bottom: 1px solid #d3d1d1;

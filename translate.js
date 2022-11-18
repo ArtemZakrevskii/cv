@@ -36,8 +36,12 @@ function translate(lang) {
 }
 
 translateBtnEng.addEventListener('click', () => {
-  translate('en')
+  translate('en');
+  translateBtnEng.classList.add('lang-active');
+  translateBtnPl.classList.remove('lang-active');
 });
 translateBtnPl.addEventListener('click', () => {
-  translate('pl')
+  translate('pl');
+  translateBtnPl.classList.add('lang-active');
+  translateBtnEng.classList.remove('lang-active');
 });
