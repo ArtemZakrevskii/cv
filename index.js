@@ -2,6 +2,20 @@ const returnBtn = document.getElementById('return');
 const worksContainer = document.querySelector('.works-list')
 const works = worksContainer.getElementsByTagName('li');
 
+function translate() {
+  i18next.init({
+    lng: 'en',
+    debug: true,
+    resources: {
+      en: {
+        translation: eng,
+      },
+      pl: {
+        translation: pln,
+      }
+    }
+  });
+}
 
 function scroll() {
   if (window.pageYOffset > 60) {

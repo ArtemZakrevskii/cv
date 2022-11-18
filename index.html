@@ -15,7 +15,17 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <title>Artem Zakrevskii - CV</title>
-    <script src="index.js" defer></script>
+    <link rel="preload" href="1.1.jpg" as="image" />
+    <link rel="preload" href="1.2.jpg" as="image" />
+    <link rel="preload" href="1.3.jpg" as="image" />
+    <link rel="preload" href="2.1.jpg" as="image" />
+    <link rel="preload" href="2.2.jpg" as="image" />
+    <link rel="preload" href="2.3.jpg" as="image" />
+    <link rel="preload" href="2.4.jpg" as="image" />
+    <link rel="preload" href="3.1.jpg" as="image" />
+    <link rel="preload" href="4.1.jpg" as="image" />
+    <link rel="preload" href="4.2.jpg" as="image" />
+    <link rel="preload" href="5.1.jpg" as="image" />
   </head>
   <body>
     <header class="page-header" id="head">
@@ -34,12 +44,12 @@
             </li>
           </ul>
           <ul class="header-navigation-list">
-            <li class="header-navigation-item"><a href="#about">about</a></li>
-            <li class="header-navigation-item"><a href="#skills">skills</a></li>
+            <li class="header-navigation-item"><a id="link-about" href="#about">about</a></li>
+            <li class="header-navigation-item"><a id="link-skills" href="#skills">skills</a></li>
             <li class="header-navigation-item">
-              <a href="#education">education</a>
+              <a id="link-education" href="#education">education</a>
             </li>
-            <li class="header-navigation-item"><a href="#works">works</a></li>
+            <li class="header-navigation-item"><a id="link-portfolio" href="#works">portfolio</a></li>
             <li class="header-navigation-item">
               <label class="menu-off" for="menu-on"></label>
             </li>
@@ -53,149 +63,247 @@
           <div class="main-text">
             <h2 class="main-title">Artem Zakrevskii</h2>
             <ul>
-              <li class="main-text-item">I'm 28 years old. Have C&I Engineer degree.</li>
+              <li class="main-text-item">I'm 29 years old. Have Engineer degree.</li>
               <li class="main-text-item">
-                Good at JavaScript/TypeScript, HTML, CSS, ReactJs, Git. Worked with Webpack, SASS,
-                NodeJs, Ant Design, Jest, Redux, AWS.
+                2D Artist, Character Artist, based in Łódź, Poland. 
               </li>
               <li class="main-text-item">
-                Calm person, have good communication skills, can work easily in a team. I appreciate
-                honesty and kindness in people.
+                Specialized on Concept Art Illustration.
               </li>
               <li class="main-text-item">
-                Interested in science-tech, astronomy, game-dev and extreme spots.
+                Hardworking and passionate, devoted to my work. 
               </li>
-              <li class="main-text-item">Ready to learn new things and improve my skills.</li>
+              <li class="main-text-item">Self-motivated and always ready to learn.</li>
+              <li class="main-text-item">Being truly inspired by modern art, science fiction and travelling.
+              </li>
             </ul>
           </div>
           <img class="cv-avatar" src="images/user.jpg" width="300" alt="Avatar" />
+          <div class="translate-container">
+            <div class="eng-btn" id="translateBtnEng" aria-placeholder="ENG"></div>
+            <div class="pl-btn" id="translateBtnPl" aria-placeholder="PL"></div>
+          </div>
         </div>
       </section>
       <section class="skills" id="skills">
         <div class="container grid-wrapper">
-          <h3 class="title">My Tech Stack</h3>
+          <h3 class="title" id="skillsTitle">My skills</h3>
           <ul class="skills-list">
-            <li class="skills-item">HTML5</li>
-            <li class="skills-item">CSS3</li>
-            <li class="skills-item">JavaScript</li>
-            <li class="skills-item">TypeScript</li>
-            <li class="skills-item">Git</li>
-            <li class="skills-item">React</li>
-            <li class="skills-item">Redux</li>
-            <li class="skills-item">Jest</li>
+            <li class="skills-item">Photoshop</li>
+            <li class="skills-item">Blender</li>
+            <li class="skills-item">Autocad</li>
+            <li class="skills-item">Sketching concept designs and key elements of the visual style</li>
+            <li class="skills-item">Applying textures to all visual elements
+            </li>
+            <li class="skills-item">Adding lighting and shading effects to all elements, ensuring consistency in color, intensity and lighting levels</li>
+            <li class="skills-item">Advanced understanding of visual language - texture, color, dimension, scale, perspective, shade, composition depth of field, proportion, spatial awareness</li>
+            <li class="skills-item">Solid knowledge of game genres and latest trends in gaming</li>
+            <li class="skills-item">Team player, ability to work independently</li>
+            <li class="skills-item">Ability to take on constructive criticism and delivering amendments based on feedback</li>
+            <li class="skills-item">Used to working under pressure and consistently meeting deadlines
+            </li>
           </ul>
-          <h3 class="title">Language skills</h3>
+          <h3 class="title" id="langTitle">Language skills</h3>
           <ul class="skills-list">
             <li class="skills-item">Russian: Native</li>
             <li class="skills-item">English: Intermediate (B1)</li>
+            <li class="skills-item">Polish: Intermediate (B1)</li>
           </ul>
         </div>
       </section>
       <section class="education" id="education">
         <div class="container">
-          <h3 class="title">Education</h3>
+          <h3 class="title" id="educationTitle">Education</h3>
           <ul class="education-list">
             <li class="education-item">
-              <a href="https://www.klgtu.ru/en/">Kaliningrad State Technical University:</a>
-              2010-2015. Master degree
+              Kaliningrad State Technical University. Master degree
             </li>
             <li class="education-item">
-              <a href="https://cs50.harvard.edu/">CS50:</a> Introduction to Computer Science course
+              Game Design Document: Define the Art & Concepts
             </li>
             <li class="education-item">
-              <a href="https://htmlacademy.ru/">HTML Academy:</a> html, css and javascript training
+              Intro sketching XYZ School
             </li>
             <li class="education-item">
-              <a href="https://rs.school/">RSschool:</a> html, css, javascript and typescript
-              training
+              How to Become a 2D Artist: An Introduction to the Profession
+            </li>
+            <li class="education-item">
+              Introduction concept art with Dmitry Klyushkin
+            </li>
+            <li class="education-item">
+              Anatomy for Figure Drawing: Mastering the Human Figure
             </li>
           </ul>
         </div>
       </section>
       <section class="works" id="works">
         <div class="container">
-          <h3 class="title">Works</h3>
+          <h3 class="title" id="portfolioTitle">Portfolio</h3>
+          <p>This portfolio is based on a game project ‘Entropy’ that I have been working on for the last year. Going deep into the details of the lore I designed characters and a plot of the story. </p>
+            <p>The project is created in a grimdark style where the leitmotif of the whole narrative is the question <i>‘What is worse: the infinite life in the universe doomed to reach a state of thermodynamic equilibrium or death?’</i></p>
+            <p>Working on the story I plunged deeply into cosmological theories and hypothesis trying to make it more realistic. I wanted to let people know that our world is unique and diverse in the way it is even without magic.
+            </p>
+            <p>Due to the explosion of scientific interest I believe that this project will succeed and viewers will be truly engaged into it.</p>
+            <p>The final goal is a single-player grimdark drama focused on immersing a player into a storytelling with the elements of an action-adventure. With this game I intend to contribute to popularization of science.  </p>
+            <p>Creating ‘Entropy’ was a fascinating process that made me inspired by sci-fi art, music and products of Quantic Dream, Kojima Productions, Blizzard, Bioware and many other game studios. </p>
           <ul class="works-list">
             <li class="works-item">
               <figure class="figure-field">
                 <figcaption class="work-item-title">
-                  <p>Environment Discovery Project (EDP)</p>
                   <p>
-                    I was part of EDP as frontend developer. EDP is a project, focused on developing
-                    an app that can provide an easy comparison between settings of two servers in
-                    order to solve server configuration-related problems. <br />Used technologies:
-                    ReactJS, Redux, Redux-saga, Ant Design, SCSS, Jest, Enzyme, ESLint
+                    <i>
+                      A massive figure with huge metal wings reflecting the sunshine pierced through the clouds above the cliff and froze in the sky. Her bottomless black eyes terrified me. She reached me out blinding me with her shining and I slowly started losing my consciousness. I wanted to find a salvation. I tried so hard and got so far. But in the end I lost everything. And now it doesn`t even matter. This final journey is such a beautiful place.
+                    </i>
                   </p>
                 </figcaption>
-                <a href="images/EDP.jpg" class="img-link" target="_blank">
-                  <img src="images/EDP.jpg" width="100%" alt="EDP prev" />
-                  <a href="images/EDP.jpg" download="EDP.jpg" target="_blank" class="download-btn">
-                    <i class="fa fa-download"></i>
-                  </a>
-                </a>
+                <div class="img-container first-pic">
+                  <div class="img-block">
+                    <a href="images/portfolio/1.1.jpg" class="img-link" target="_blank"><img src="images/portfolio/1.1.jpg" width="100%" alt="1.1 prev" /></a>
+                    <a href="images/portfolio/1.1.jpg" download="1.1.jpg" target="_blank" class="download-btn">
+                      <i class="fa fa-download"></i>
+                    </a>
+                  </div>
+                  <div class="img-block" style="width: calc(50% - 2.5px);">
+                    <a href="images/portfolio/1.2.jpg" class="img-link" target="_blank">
+                      <img src="images/portfolio/1.2.jpg" width="100%" alt="1.2 prev" />
+                    </a>
+                    <a href="images/portfolio/1.2.jpg" download="1.2.jpg" target="_blank" class="download-btn">
+                      <i class="fa fa-download"></i>
+                    </a>
+                  </div>
+                  <div class="img-block" style="width: calc(50% - 2.5px);">
+                    <a href="images/portfolio/1.3.jpg" class="img-link" target="_blank">
+                      <img src="images/portfolio/1.3.jpg" width="100%" alt="1.3 prev" />
+                    </a>
+                    <a href="images/portfolio/1.3.jpg" download="1.3.jpg" target="_blank" class="download-btn">
+                      <i class="fa fa-download"></i>
+                    </a>
+                  </div>
+                </div>
+              </figure>
+              <p>A strict isolation was implemented to eliminate the influence on the development of civilization. The minds of intruders are extracted, defragmented and examined in details. These measures are necessary in order to defence secrecy. </p>
+            </li>
+            <li class="works-item">
+              <figure class="figure-field">
+                <figcaption class="work-item-title">
+                  <p>
+                    <i>
+                      Sounds of gunfire have stopped and the noise of breaking spine bones came out in silence.
+                    </i>
+                  </p>
+                </figcaption>
+                <div class="img-container second-pic">
+                  <div class="img-block">
+                    <a href="images/portfolio/2.1.jpg" class="img-link" target="_blank">
+                      <img src="images/portfolio/2.1.jpg" width="100%" alt="2.1 prev" />
+                    </a>
+                    <a href="images/portfolio/2.1.jpg" download="2.1.jpg" target="_blank" class="download-btn">
+                      <i class="fa fa-download"></i>
+                    </a>
+                  </div>
+                  <div class="img-block" style="width: calc(33% - 2.5px);">
+                    <a href="images/portfolio/2.2.jpg" class="img-link" target="_blank">
+                      <img src="images/portfolio/2.2.jpg" width="100%" alt="2.2 prev" />
+                    </a>
+                    <a href="images/portfolio/2.2.jpg" download="2.2.jpg" target="_blank" class="download-btn">
+                      <i class="fa fa-download"></i>
+                    </a>
+                  </div>
+                  <div class="img-block" style="width: calc(33% - 2.5px);">
+                    <a href="images/portfolio/2.3.jpg" class="img-link" target="_blank">
+                      <img src="images/portfolio/2.3.jpg" width="100%" alt="2.3 prev" />
+                    </a>
+                    <a href="images/portfolio/2.3.jpg" download="2.3.jpg" target="_blank" class="download-btn">
+                      <i class="fa fa-download"></i>
+                    </a>
+                  </div>
+                  <div class="img-block" style="width: calc(33% - 2.5px);">
+                    <a href="images/portfolio/2.4.jpg" class="img-link" target="_blank">
+                      <img src="images/portfolio/2.4.jpg" width="100%" alt="2.4 prev" />
+                    </a>
+                    <a href="images/portfolio/2.4.jpg" download="2.4.jpg" target="_blank" class="download-btn">
+                      <i class="fa fa-download"></i>
+                    </a>
+                  </div>
+                </div>
+              </figure>
+              <p>A team of geologists with the protagonist arrived to Antarctica, the Wilk Land crater. Protected by a private military company they came to explore an abandoned autonomous research station that hovered over the ice sheet fault. The team went down to the signal and found a complex of underground facilities. </p>
+            </li>
+            <li class="works-item">
+              <figure class="figure-field">
+                <figcaption class="work-item-title">
+                  <p>
+                    <i>
+                      ‘Dive into water and relax, it will soothe you and wash all the negative thoughts away’.
+                    </i>
+                  </p>
+                </figcaption>
+                <div class="img-container">
+                  <div class="img-block">
+                    <a href="images/portfolio/3.1.jpg" class="img-link" target="_blank">
+                      <img src="images/portfolio/3.1.jpg" width="100%" alt="3.1 prev" />
+                    </a>
+                    <a href="images/portfolio/3.1.jpg" download="3.1.jpg" target="_blank" class="download-btn">
+                      <i class="fa fa-download"></i>
+                    </a>
+                  </div>
+                </div>
+              </figure>
+              <p>This active neuroenvironment allows us to improve and properly structure the work of any types of nerosystems. We can use it in different energy states to support the functions of our systems.</p>
+            </li>
+            <li class="works-item">
+              <figure class="figure-field">
+                <figcaption class="work-item-title">
+                  <p>
+                    <i>
+                      By the age of 30 my life is nothing but a Groundhog Day. Was it all worth it paying my limbs and taking part in never-ending wars? God knows how deeply exhausted I am.
+                    </i>
+                  </p>
+                </figcaption>
+                <div class="img-container fourth-pic">
+                  <div class="img-block">
+                    <div style="width: 100%; position: relative;">
+                      <a href="images/portfolio/4.1.jpg" class="img-link" target="_blank">
+                        <img src="images/portfolio/4.1.jpg" width="100%" alt="4.1 prev" />     
+                      </a>
+                      <a href="images/portfolio/4.1.jpg" download="4.1.jpg" target="_blank" class="download-btn">
+                        <i class="fa fa-download"></i>
+                      </a>
+                    </div>
+                    <p>The protagonist was born in 2137. She is 30 years old by the moment the story starts. It`s Northern Union (authoritarian technocratic state in Scandinavian countries). During the military operation and being a soldier of a private military company she lost her limbs in Cairo wasteland. Since that moment she has had the synthetic muscle-powered prosthetic legs and arms.</p>
+                  </div>
+                  <div class="img-block">
+                    <a href="images/portfolio/4.2.jpg" class="img-link" target="_blank">
+                      <img src="images/portfolio/4.2.jpg" width="100%" alt="4.2 prev" />
+                    </a>
+                    <a href="images/portfolio/4.2.jpg" download="4.2.jpg" target="_blank" class="download-btn">
+                      <i class="fa fa-download"></i>
+                    </a>
+                  </div>
+                </div>
               </figure>
             </li>
             <li class="works-item">
               <figure class="figure-field">
                 <figcaption class="work-item-title">
-                  <a href="https://vadosdavos.github.io/my-works/museum-dom/" target="_blank"
-                    >Museum</a
-                  >
                   <p>
-                    This is a landing page of Louvre museum. <br />Used technologies: HTML, CSS,
-                    JavaScript
+                    <i>
+                      Once you step on the forbidden land you inevitably pass into oblivion. 
+                    </i>
                   </p>
                 </figcaption>
-                <a
-                  href="https://vadosdavos.github.io/my-works/museum-dom/"
-                  class="img-link"
-                  target="_blank"
-                  ><img src="images/museum.jpg" width="100%" alt="Museum prev"
-                /></a>
+                <div class="img-container">
+                  <div class="img-block">
+                    <a href="images/portfolio/5.1.jpg" class="img-link" target="_blank">
+                      <img src="images/portfolio/5.1.jpg" width="100%" alt="5.1 prev" />
+                    </a>
+                    <a href="images/portfolio/5.1.jpg" download="5.1.jpg" target="_blank" class="download-btn">
+                      <i class="fa fa-download"></i>
+                    </a>
+                  </div>
+                </div>
               </figure>
-            </li>
-            <li class="works-item">
-              <figure class="figure-field">
-                <figcaption class="work-item-title">
-                  <a href="https://vadosdavos.github.io/photo-filter/" target="_blank"
-                    >Photo filter</a
-                  >
-                  <p>
-                    The application is a photo editor that allows you to edit an image by applying
-                    various properties and filters to them.
-                    <br />Used technologies: HTML, CSS, JavaScript
-                  </p>
-                </figcaption>
-                <a
-                  href="https://vadosdavos.github.io/photo-filter/"
-                  class="img-link"
-                  target="_blank"
-                  ><img src="images/filter.jpg" width="600" alt="Photo filter prev"
-                /></a>
-              </figure>
-            </li>
-            <li class="works-item">
-              <figure class="figure-field">
-                <figcaption class="work-item-title">
-                  <a href="https://vadosdavos.github.io/virtual-piano/" target="_blank"
-                    >Virtual piano</a
-                  >
-                  <p>
-                    The application is a virtual piano. The page displays the piano keys. The
-                    minimum number of keys is 12 - 7 white and 5 black (one octave), near the piano
-                    keys are displayed either the names of the notes corresponding to these keys, or
-                    the letters of the keyboard keys, when clicked on which they sound. What is
-                    displayed at the moment depends on the state of the Notes / Letters switch.
-                    <br />Used technologies: HTML, CSS, JavaScript
-                  </p>
-                </figcaption>
-                <a
-                  href="https://vadosdavos.github.io/virtual-piano/"
-                  class="img-link"
-                  target="_blank"
-                  ><img src="images/virtual-piano.jpg" width="600" alt="Virtual piano prev"
-                /></a>
-              </figure>
+              <p>Taking various shapes and in cooperation with other systems they protect the secrets of continent existence night and day. Not a single attempt of interaction with this civilization is allowed.</p>
             </li>
           </ul>
         </div>
@@ -212,5 +320,8 @@
         </ul>
       </div>
     </footer>
+    <script src="https://unpkg.com/i18next/dist/umd/i18next.min.js"></script>
+    <script src="index.js" defer></script>
+    <script type="module"src="translate.js" defer></script>
   </body>
 </html>

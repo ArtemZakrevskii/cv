@@ -1,0 +1,10 @@
+{
+  "header": {
+      "about": "o mnie",
+      "skills": "umiejętności",
+      "education": "Edukacja",
+      "portfolio": "Teczka"
+  },
+  "skillsTitle": "Moje umiejętności",
+  "langTitle": "Umiejętności językowe"
+}

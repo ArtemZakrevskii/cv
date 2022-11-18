@@ -1,0 +1,10 @@
+{
+  "header": {
+      "about": "about",
+      "skills": "skills",
+      "education": "Education",
+      "portfolio": "Portfolio"
+  },
+  "skillsTitle": "My skills",
+  "langTitle": "Language skills"
+}
