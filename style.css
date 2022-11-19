@@ -424,7 +424,7 @@ iframe {
   }
 }
 @media (max-width: 700px) {
-  .title {
+  .title, .main-title {
     text-align: center;
   }
   .works-list {
@@ -457,6 +457,18 @@ iframe {
     width: 30px;
     height: 30px;
     right: 60px;
+  }
+  .skills .grid-wrapper {
+    grid-template-columns: 100%;
+    grid-template-rows: 30px 1fr;
+    grid-template-areas:
+      'title2'
+      'text2'
+      'title'
+      'text';
+  }
+  #skillsTitle {
+    margin: 10px 0 0 0;
   }
   .contacts-list-item {
     margin-bottom: 5px;
