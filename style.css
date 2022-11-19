@@ -438,9 +438,8 @@ iframe {
   .return {
     right: 80px;
   }
-  iframe {
-    width: 75vw;
-    height: 30vh;
+  .fourth-pic .img-block {
+    width: calc(100%);
   }
 }
 @media (max-width: 640px) {
@@ -504,8 +503,5 @@ iframe {
   }
   .return {
     right: 15px;
-  }
-  .fourth-pic .img-block {
-    width: calc(100%);
   }
 }
