@@ -53,7 +53,7 @@ main {
 .page-header,
 .page-footer {
   padding: 20px 0;
-  background-color:#8C5D23;
+  background-color:#cacaca;
 }
 .header-navigation,
 .copyright {
@@ -155,7 +155,7 @@ main {
 .cv-avatar {
   grid-area: img;
   border-radius: 15% 0;
-  box-shadow: 0 0 5px 2px goldenrod;
+  box-shadow: 0 0 5px 2px #cacaca;
   justify-self: end;
   height: 350px;
   object-fit: cover;
@@ -187,15 +187,32 @@ main {
   padding: 25px 0;
   border-bottom: 1px solid #d3d1d1;
 }
+.education-container {
+  display: flex;
+}
 .works {
   padding-top: 25px;
-  line-height: normal;
+  
 }
-.works-list {
+.works .container {
+  border-bottom: 1px solid #d3d1d1;
+}
+.works-list, .other-works-list {
   margin: 0;
   padding: 0;
   overflow: hidden;
   list-style: none;
+}
+.other-works-list .works-item:first-child {
+  margin-top: 0;
+}
+.other-works-list .works-item::before, 
+.other-works-list .works-item::after,
+.other-works-list .works-item:last-child::after {
+  display: none;
+}
+.other-works-list .work-item-title p {
+  margin-top: 0;
 }
 .works-item {
   transform: translateX(20%) scale(0.9);
@@ -209,6 +226,16 @@ main {
   display: block;
   position: absolute;
   top: -10px;
+  left: calc(50% - 150px);
+  width: 300px;
+  height: 1px;
+  background:#d3d1d1;
+}
+.works-item:last-child:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0px;
   left: calc(50% - 150px);
   width: 300px;
   height: 1px;
@@ -290,7 +317,7 @@ iframe {
   position: absolute;
   left: 0;
   bottom: 0;
-  background-color: #8C5D23;
+  background-color: black;
   border: none;
   border-radius: 10px;
   padding: 10px;
@@ -377,7 +404,7 @@ iframe {
     transition: 0.5s;
   }
   #menu-on:checked ~ .burger {
-    background-color: #8C5D23;
+    background-color: #cacaca;
     transition: 0.5s;
   }
   #menu-on:checked ~ .burger::before {
@@ -427,7 +454,7 @@ iframe {
   .title, .main-title {
     text-align: center;
   }
-  .works-list {
+  .works-list, .other-works-list {
     padding-left: 10px;
     list-style: none;
     text-align: center;
@@ -503,5 +530,8 @@ iframe {
   }
   .return {
     right: 15px;
+  }
+  .education-container {
+    display: block;
   }
 }
