@@ -354,7 +354,7 @@ iframe {
 }
 .links-container {
   display: flex;
-  gap: 20px;
+  gap: 15px;
 }
 .social-link {
   display: block;
@@ -368,6 +368,9 @@ iframe {
 }
 .artstation {
   background-image: url(images/artstation.svg);
+}
+.linkedin {
+  background-image: url(images/linked.png);
 }
 
 @media (max-width: 960px) {
