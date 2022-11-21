@@ -99,9 +99,6 @@ main {
 .copyright-item a::after {
   background-color: black;
 }
-.info-list {
-  list-style: none;
-}
 .translate-container {
   position: absolute;
   right: 0;
@@ -151,6 +148,9 @@ main {
 .main-text {
   grid-area: text;
   line-height: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .main-text-item {
   margin-bottom: 5px;
@@ -337,6 +337,38 @@ iframe {
 .download-btn:hover::after {
   display: none;
 }
+.download-btn.download-cv {
+  position: static;
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px !important;
+  line-height: 18px !important;
+  color:#4f4f4f !important;
+  background: #cacaca;
+  min-height: 30px;
+  vertical-align: middle;
+  padding: 11px;
+}
+.download-btn.download-cv::after {
+  display: none;
+}
+.links-container {
+  display: flex;
+  gap: 20px;
+}
+.social-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.instagram {
+  background-image: url(images/inst.png);
+}
+.artstation {
+  background-image: url(images/artstation.svg);
+}
 
 @media (max-width: 960px) {
   section,
@@ -456,6 +488,10 @@ iframe {
 @media (max-width: 700px) {
   .title, .main-title {
     text-align: center;
+    align-self: center;
+  }
+  .main-text {
+    align-items: center;
   }
   .works-list, .other-works-list {
     padding-left: 10px;
@@ -477,15 +513,27 @@ iframe {
   .title {
     font-size: 1em;
   }
+  .main-title {
+    text-align: center;
+    margin-top: 10px;
+  }
   .cv-avatar {
     object-position: top;
-    height: 300px;
-    width: 45vw;
+    height: 80vw;
+    width: 60vw;
   }
   .return {
     width: 30px;
     height: 30px;
     right: 60px;
+  }
+  .main-text {
+    order: 2;
+  }
+  .main-info .grid-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .skills .grid-wrapper {
     grid-template-columns: 100%;
@@ -513,23 +561,8 @@ iframe {
   .page-header {
     padding-right: 10px;
   }
-  .cv-avatar {
-    object-position: top;
-    height: 80vw;
-    width: 60vw;
-  }
-  .main-info .grid-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .main-title {
-    text-align: center;
-    margin-top: 10px;
-  }
   .main-text {
     line-height: 14px;
-    order: 2;
   }
   .return {
     right: 15px;
