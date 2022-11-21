@@ -99,6 +99,9 @@ main {
 .copyright-item a::after {
   background-color: black;
 }
+.info-list {
+  list-style: none;
+}
 .translate-container {
   position: absolute;
   right: 0;
